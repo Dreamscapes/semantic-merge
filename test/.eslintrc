@@ -1,0 +1,6 @@
+{
+  "rules": {
+    // Allow should.js expressions when writing tests
+    "no-unused-expressions": 0
+  }
+}

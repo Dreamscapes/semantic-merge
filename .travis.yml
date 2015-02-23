@@ -1,0 +1,22 @@
+---
+sudo: false
+language: node_js
+node_js:
+- '0.12'
+- '0.10'
+after_success:
+- make coveralls
+- '[[ -n "$TRAVIS_TAG" ]] && make gh-pages'
+deploy:
+  provider: npm
+  email: rr.rossmann@gmail.com
+  api_key:
+    secure: Ch4tJpGGxO+2+ivMinBB4ysIkSklSRpTeTdDG4moAAuakeAGmxKsxCgCPy9gdob5n8M4MJ3ZnW8dXRLGWpqrGOv+zpSOX1F76VTYJmAMV+TjqGEZNijjPmf8gzOoZ44H3f9jM2Yi1yjx5SIVZGn2SyE333d95wGeTBv9BT1M5Pg=
+  on:
+    tags: true
+    node: '0.12'
+    repo: Dreamscapes/semantic-merge
+    all_branches: true
+env:
+  global:
+    secure: medK5FkcYvntB64osQZP3orfU5SvcY7cxxF1DeFO1B23MeB2Vjs9wCWHm0UuyF536tQgOB4uhmrN1HIXt0fNEPElu2lGiQxrTW7yxxLQaeuaA+nLR1rBpRPn9UNeMbfqtwbyzRhfTCHPPptdy78Qz2QUTSQIZeIgaii/V85jV/A=

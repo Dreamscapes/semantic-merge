@@ -1,0 +1,16 @@
+# Platform-specific excludes
+thumbs.db
+.DS_Store
+
+# Node.js-specific excludes
+node_modules
+npm-debug.log
+
+# Code editor-specific excludes
+*.sublime-*
+
+# Project-specific excludes
+docs
+coverage
+gh-pages
+jsdoc-template
