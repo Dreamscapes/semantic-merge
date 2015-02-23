@@ -48,7 +48,7 @@
       "no-nested-ternary": 2,
       "no-process-exit": 1,
       "no-self-compare": 2,
-      "no-space-before-semi": 0,  // We don't use semicolons and this keeps complaining
+      "no-space-before-semi": 0,
       "no-throw-literal": 2,
       "no-unused-expressions": 1,
       "no-use-before-define": [2, "nofunc"],
