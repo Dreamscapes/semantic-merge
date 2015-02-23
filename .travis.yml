@@ -1,4 +1,3 @@
----
 sudo: false
 language: node_js
 node_js:
@@ -11,7 +10,7 @@ deploy:
   provider: npm
   email: rr.rossmann@gmail.com
   api_key:
-    secure: Ch4tJpGGxO+2+ivMinBB4ysIkSklSRpTeTdDG4moAAuakeAGmxKsxCgCPy9gdob5n8M4MJ3ZnW8dXRLGWpqrGOv+zpSOX1F76VTYJmAMV+TjqGEZNijjPmf8gzOoZ44H3f9jM2Yi1yjx5SIVZGn2SyE333d95wGeTBv9BT1M5Pg=
+    secure: DC89w8xRSEK+lm0ZHq8mnEcubBXKRj3/h9ZvcKL0s8sKUo2gwx6hwpNu1zUNbDJI7+teD8JsE1bun8uGRX6JsUEjIPoejBTDvAPCt4tzFcAPIJhfBSGTcRMyMevSSu75UtduThQv9RVocx3/e4kss/R+f2pyiVgDEUHzagvZ/OU=
   on:
     tags: true
     node: '0.12'
@@ -19,4 +18,4 @@ deploy:
     all_branches: true
 env:
   global:
-    secure: medK5FkcYvntB64osQZP3orfU5SvcY7cxxF1DeFO1B23MeB2Vjs9wCWHm0UuyF536tQgOB4uhmrN1HIXt0fNEPElu2lGiQxrTW7yxxLQaeuaA+nLR1rBpRPn9UNeMbfqtwbyzRhfTCHPPptdy78Qz2QUTSQIZeIgaii/V85jV/A=
+    secure: uFp6OOCdUo4KOD6IFmK240pDSLJ1/fn2cAgsuK3wRYLUZ9zQL2l8nE5P7/MkmE+Kfoycf4iWKpv55W55EzQ3EULbah/oE0uSKrYDuRSN1EUL3t5WiiR+XMiKGnAWi4y2cmjxsQ0oRe9JVIgWVENi+tF8mYfU02HCEv71DJ/bsa4=
