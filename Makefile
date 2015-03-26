@@ -11,7 +11,7 @@
 # Helper vars
 BIN = node_modules/.bin/
 # Current Node.js version (in the form v{MAJOR}.{MINOR}, i.e. v0.12)
-NODE_V = $(shell node -v | cut -f1,2 -d".")
+NODE_V = $(shell node -v | cut -f 1,2 -d .)
 # If there is any target that mutates some remote data, check if it runs on this version of Node
 NODE_T = v0.12
 # Command line args for Mocha test runner
@@ -19,7 +19,7 @@ MOCHAFLAGS = --require should --check-leaks
 
 # Project-specific information
 GH_USER = Alaneor
-GH_REPO = $(shell git remote -v | grep origin | grep fetch | cut -d":" -f2 | cut -d"." -f1)
+GH_REPO = $(shell git remote -v | grep origin | grep fetch | cut -d : -f 2 | cut -d . -f 1)
 
 # Project-specific paths
 LIBDIR = lib
