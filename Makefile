@@ -15,7 +15,7 @@ NODE_V = $(shell node -v | cut -f1,2 -d".")
 # If there is any target that mutates some remote data, check if it runs on this version of Node
 NODE_T = v0.12
 # Command line args for Mocha test runner
-MOCHAFLAGS = --require should
+MOCHAFLAGS = --require should --check-leaks
 
 # Project-specific information
 GH_USER = Alaneor
