@@ -61,6 +61,17 @@ describe('Basics', function () {
       merge.and(null).into({})
     }.should.throw(TypeError)
   })
+
+  it('should throw when target is null or not typeof \'object\'', function () {
+    // No target given
+    void function () {
+      new Merger({}).into()
+    }.should.throw(TypeError)
+    // Target is null (which is typeof object...)
+    void function () {
+      new Merger({}).into(null)
+    }.should.throw(TypeError)
+  })
 })
 
 
