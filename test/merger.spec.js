@@ -202,3 +202,29 @@ describe('Merging - exclusions', function () {
     target.nested.should.not.have.property('nestedProp')
   })
 })
+
+describe('Merging - arrays', function () {
+
+  it('should merge arrays by value, not by key', function () {
+    merge.and({ arr: [ 1, 2, 3 ] }).recursively.into(target)
+
+    target.arr.should.have.length(6)
+    target.arr.should.containDeep([ 'a', 'b', 'c', 1, 2, 3 ])
+  })
+
+  it('should skip primitives already present in source array', function () {
+    merge.and({ arr: [ 1, 'a' ] }).recursively.into(target)
+
+    target.arr.should.have.length(4)
+    target.arr.should.containDeep([ 'a', 'b', 'c', 1 ])
+  })
+
+  it('should skip objects already present in source array', function () {
+    var obj = { test: 'prop' }
+    source.arr.push(obj)
+    merge.and({ arr: [obj] }).recursively.into(target)
+
+    target.arr.should.have.length(4)
+    target.arr.should.containDeep([ 'a', 'b', 'c', obj ])
+  })
+})
