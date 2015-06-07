@@ -1,7 +1,7 @@
 {
   "name": "semantic-merge",
   "description": "A merging utility that is self-descriptive and makes sense",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": {
     "name": "Robert Rossmann",
     "email": "rr.rossmann@me.com"
