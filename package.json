@@ -6,6 +6,7 @@
     "name": "Robert Rossmann",
     "email": "rr.rossmann@me.com"
   },
+  "bugs": "https://github.com/Dreamscapes/semantic-merge/issues",
   "devDependencies": {
     "coveralls": "^2.11.2",
     "eslint": "^0.22.1",
@@ -20,14 +21,15 @@
   },
   "homepage": "https://github.com/Dreamscapes/semantic-merge",
   "keywords": [
-    "semantic",
-    "natural",
-    "merge",
-    "merging",
+    "combine",
     "join",
     "joining",
-    "combine"
+    "merge",
+    "merging",
+    "natural",
+    "semantic"
   ],
+  "license": "BSD-3-Clause",
   "main": "lib/merger.js",
   "repository": {
     "type": "git",
