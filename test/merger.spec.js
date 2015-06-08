@@ -1,12 +1,8 @@
 /**
- * Dreamscapes\semantic-merge
- *
- * Licensed under the BSD-3-Clause license
- * For full copyright and license information, please see the LICENSE file
+ * semantic-merge
  *
  * @author     Robert Rossmann <rr.rossmann@me.com>
  * @copyright  2015 Robert Rossmann
- * @link       https://github.com/Dreamscapes/semantic-merge
  * @license    http://choosealicense.com/licenses/bsd-3-clause  BSD-3-Clause License
  */
 
