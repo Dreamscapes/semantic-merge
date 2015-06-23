@@ -8,6 +8,7 @@
   },
   "bugs": "https://github.com/Dreamscapes/semantic-merge/issues",
   "devDependencies": {
+    "benchmark": "^1.0.0",
     "coveralls": "^2.11.2",
     "eslint": "^0.22.1",
     "istanbul": "^0.3.2",
