@@ -186,6 +186,14 @@ describe('Merging - recursion', function () {
 
     target.nested.should.have.property('anotherProp', 'I shall remain')
   })
+
+  xit('should properly handle cyclic recursions', function () {
+    source.source = source    // Create a backreference on itself
+
+    merge.recursively.into(target)
+
+    target.source.should.be.exactly(target)
+  })
 })
 
 
