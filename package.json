@@ -10,12 +10,12 @@
   "devDependencies": {
     "benchmark": "^1.0.0",
     "coveralls": "^2.11.2",
-    "eslint": "^0.22.1",
+    "eslint": "^0.23.0",
     "istanbul": "^0.3.2",
     "jsdoc": "^3.3.0",
     "mocha": "^2.0.1",
     "mocha-lcov-reporter": "^0.0.2",
-    "should": "^6"
+    "should": "^7"
   },
   "engines": {
     "node": ">= 0.10.0"

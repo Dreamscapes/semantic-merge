@@ -1,9 +1,5 @@
 {
   "env": {
     "mocha": true
-  },
-  "rules": {
-    // For compatibility with should.js test expressions
-    "no-unused-expressions": 0
   }
 }

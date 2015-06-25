@@ -36,11 +36,11 @@ beforeEach(function () {
 describe('Basics', function () {
 
   it('should be a function', function () {
-    Merger.should.be.a.Function
+    Merger.should.be.Function()
   })
 
   it('should return a new instance when called without \'new\'', function () {
-    Merger.call(null, source).should.be.an.instanceof(Merger)
+    Merger.call(null, source).should.be.instanceof(Merger)
   })
 
   it('should throw when source is null or not typeof \'object\'', function () {
@@ -174,8 +174,8 @@ describe('Merging - recursion', function () {
   it('should merge into the same object type when target object does not exist', function () {
     merge.recursively.into(target)
 
-    target.nested.should.be.Object
-    target.arr.should.be.Array
+    target.nested.should.be.Object()
+    target.arr.should.be.Array()
   })
 
   it('should preserve properties already present on nested objects during recursion', function () {
