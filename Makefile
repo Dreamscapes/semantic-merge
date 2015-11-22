@@ -18,3 +18,9 @@ testflags += --require should
 # Define version constraints
 gh-pages: platform-version
 coveralls: platform-version
+
+# Project-specific targets
+bench:
+	@node bench
+
+.PHONY: bench
