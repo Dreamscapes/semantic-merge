@@ -14,7 +14,7 @@
     "jsdoc": "^3.3.0",
     "mocha": "^2.0.1",
     "mocha-lcov-reporter": "^0.0.2",
-    "should": "^6"
+    "should": "^8.3.0"
   },
   "engines": {
     "node": ">= 0.10.0"
