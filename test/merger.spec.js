@@ -40,7 +40,7 @@ describe('Basics', function () {
   })
 
   it('should return a new instance when called without \'new\'', function () {
-    Merger(source).should.be.instanceof(Merger)   // eslint-disable-line new-cap
+    Merger(source).should.be.instanceof(Merger.Merger)   // eslint-disable-line new-cap
   })
 
   it('should throw when source is null or not typeof \'object\'', function () {
