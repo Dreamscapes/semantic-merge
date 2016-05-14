@@ -13,7 +13,7 @@
 Code should be self-descriptive - you should not need to go hunting for API docs just to understand how a particular function or method works. Ever seen this?
 
 ```js
-var result = merge({prop: 'some value' }, { prop: 'another value' })
+const result = merge({prop: 'some value' }, { prop: 'another value' })
 ```
 
 It's obvious the `merge` function merges two objects, but in what order? And does it modify one of the original objects or does it create new one? You cannot really tell unless you go check the utility's API documentation. And even then you are likely to forget in a matter of days.
@@ -21,7 +21,7 @@ It's obvious the `merge` function merges two objects, but in what order? And doe
 #### What about this?
 
 ```js
-var result = merge({prop: 'some value' }).into({ prop: 'another value' })
+const result = merge({prop: 'some value' }).into({ prop: 'another value' })
 ```
 
 Now it's obvious - the properties of the first object get merged into the second object, overwriting existing values. No need to check the docs and no need to remember anything.
@@ -31,14 +31,14 @@ Now it's obvious - the properties of the first object get merged into the second
 As usual, you start by requiring the module:
 
 ```js
-var merge = require('semantic-merge')
+const merge = require('semantic-merge')
 ```
 
 To perform a shallow merge of one object into another:
 
 ```js
 // src and target are objects defined somewhere in the current scope
-var result = merge(src).into(target)
+const result = merge(src).into(target)
 // Since we are merging into target, we do not need to capture
 // the return value:
 merge(src).into(target)
@@ -56,7 +56,7 @@ To merge src into target and create a new object without modifying target:
 // You are always explicit about what should be the merge target
 // You can chain as many .and() calls as you like - they will be merged
 // into the target from right to left, so target first, then src.
-var result = merge(src).and(target).into({})
+const result = merge(src).and(target).into({})
 ```
 
 ## Documentation

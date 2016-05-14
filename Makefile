@@ -12,7 +12,7 @@ include targets/shared/*.mk
 
 # Project-specific information
 ghuser = Alaneor
-lintfiles = lib test
+lintfiles = lib test bench
 testflags += --require should
 
 # Define version constraints

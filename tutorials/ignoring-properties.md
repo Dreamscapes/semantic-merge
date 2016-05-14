@@ -1,8 +1,8 @@
 Sometimes it may be useful to skip certain properties from being merged.
 
 ```js
-var src = { prop1: 'a property', prop2: 'I will be ignored :(' }
-  , target = {}
+const src = { prop1: 'a property', prop2: 'I will be ignored :(' }
+const target = {}
 
 // prop2 will be skipped and will not appear in the target
 merge(src).except('prop2').into(target)
