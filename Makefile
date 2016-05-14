@@ -14,6 +14,7 @@ include targets/shared/*.mk
 ghuser = Alaneor
 lintfiles = lib test bench
 testflags += --require should
+platform_t = v6.1
 
 # Define version constraints
 gh-pages: platform-version
