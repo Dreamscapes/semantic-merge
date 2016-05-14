@@ -9,7 +9,7 @@
   "bugs": "https://github.com/Dreamscapes/semantic-merge/issues",
   "devDependencies": {
     "coveralls": "^2.11.2",
-    "eslint": "^0.22.1",
+    "eslint": "^2.10.1",
     "istanbul": "^0.4.3",
     "jsdoc": "^3.3.0",
     "mocha": "^2.0.1",
