@@ -7,15 +7,17 @@
     "email": "rr.rossmann@me.com"
   },
   "bugs": "https://github.com/Dreamscapes/semantic-merge/issues",
+  "contributors": [],
+  "dependencies": {},
   "devDependencies": {
-    "benchmark": "^1.0.0",
+    "@strv/eslint-config-javascript": "^4.2.0",
+    "benchmark": "^2.1.0",
     "coveralls": "^2.11.2",
-    "eslint": "^1.3.1",
-    "istanbul": "^0.3.2",
-    "jsdoc": "^3.3.0",
-    "mocha": "^2.0.1",
-    "mocha-lcov-reporter": "^0.0.2",
-    "should": "^7"
+    "eslint": "^2.10.0",
+    "istanbul": "^0.4.3",
+    "jsdoc": "^3.4.0",
+    "mocha": "^2.4.5",
+    "should": "^8.3.1"
   },
   "engines": {
     "node": ">= 4.0.0"
@@ -31,7 +33,7 @@
     "semantic"
   ],
   "license": "BSD-3-Clause",
-  "main": "lib/merger.js",
+  "main": "lib/merger",
   "repository": {
     "type": "git",
     "url": "git://github.com/Dreamscapes/semantic-merge.git"
