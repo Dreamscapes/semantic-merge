@@ -11,7 +11,7 @@ deploy:
   provider: npm
   email: rr.rossmann@gmail.com
   api_key:
-    secure: DC89w8xRSEK+lm0ZHq8mnEcubBXKRj3/h9ZvcKL0s8sKUo2gwx6hwpNu1zUNbDJI7+teD8JsE1bun8uGRX6JsUEjIPoejBTDvAPCt4tzFcAPIJhfBSGTcRMyMevSSu75UtduThQv9RVocx3/e4kss/R+f2pyiVgDEUHzagvZ/OU=
+    secure: lkRl7d7WwlI6UEnnNJbfyOsOYQyUsIFXulD8Fff8HSKFgr39Ye5eObS3u69+zdTeYaQfOJ0fl4XD/kAe3coUJHN3fN7GPfz+sxmCYybiYa35ZaX9lMojzeyP4jccfaJldMP+ucpk3+d2zG5iigx493CWKpMZR83zyMBXU8BWEvo=
   on:
     tags: true
     node: '6'
